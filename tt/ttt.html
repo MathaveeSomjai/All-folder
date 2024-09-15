@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Text with CSS</title>
+    <style>
+        /* ซ่อน checkbox */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* สไตล์ปุ่ม */
+        label {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* ซ่อนข้อความที่ต้องการ */
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* เมื่อ checkbox ถูกคลิก ให้แสดงข้อความ */
+        input[type="checkbox"]:checked + label + .content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="checkbox" id="toggle">
+    <label for="toggle">Show/Hide Text</label>
+
+    <div class="content">
+        <p>นี่คือข้อความที่ถูกซ่อนอยู่ เมื่อคลิกปุ่มจะแสดงข้อความนี้ออกมา!</p>
+    </div>
+
+</body>
+</html>
