@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.box {
+    width: 300px; /* Content width */
+    padding: 20px; /* Space between content and border */
+    border: 5px solid #333; /* Border around the box */
+    margin: 20px auto; /* Space outside the border, centered horizontally */
+    background-color: #ffffff; /* Background color of the box */
+    box-sizing: content-box; /* Default box-sizing */
+}
+
+h2 {
+    margin: 0 0 10px 0; /* Margin for the heading */
+}
+
+p {
+    margin: 0; /* No margin around the paragraph */
+}
